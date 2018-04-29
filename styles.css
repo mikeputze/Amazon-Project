@@ -1,6 +1,29 @@
+/* HTML Tags */
 body {
     width: 1690px;
 }
+
+/* IDs */
+#wrapper {
+    width: 1690px;
+    margin-top: 10px;
+    background-color: #f3f3f3 !important;
+}
+
+#homePref {
+    width: 805px;
+    float: left;
+    border: 3px solid #000;
+}
+
+#searchPref {
+    width: 805px;
+    float: right;
+    border: 3px solid #000
+}
+
+/* Classes */
+
 
 /* Menu */
 .menu {
