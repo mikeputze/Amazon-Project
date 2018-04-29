@@ -3,6 +3,10 @@ body {
     width: 1690px;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 /* IDs */
 #wrapper {
     width: 1690px;
