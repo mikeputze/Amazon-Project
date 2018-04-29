@@ -2,6 +2,6 @@
 
 TO DO:
   - Import remaining wireframes
-  - Finish Preferences
+  - Finish Preferences ✓
   - Home Page
   - Account Page
