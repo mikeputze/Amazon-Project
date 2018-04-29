@@ -16,8 +16,6 @@
 
 <body>
 
-    <a id="top"></a>
-
     <!--Menu-->
     <nav class="menu">
         <nav id="searchArea">
@@ -32,7 +30,7 @@
                 <option value="">Arts, Crafts & Sewing</option>
                 <option value="">Automotive Parts & Accessories</option>
                 <option value="">Baby</option>
-                <option value="">Beauty & Personal Cre</option>
+                <option value="">Beauty & Personal Care</option>
                 <option value="">Books</option>
                 <option value="">CDs & Vinyl</option>
                 <option value="">Cell Phones & Accessories</option>
@@ -188,19 +186,426 @@
         <div id="homePref">
             <h3>Home Page Preferences</h3>
             <form method="post" action="/action_page_post.php">
-                <label>Flip Switch:</label>
-                <label class="switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <div class="slider round"></div>
+                <label>Ad Banner <em style="font-size: 60%;">(Prime only)</em>: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked" disabled="disabled">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+
+                <label>Category Banner: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+
+                <label>Deals recommended for you: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+                
+                <label>Additional items to explore: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+                
+                <label>Inspired by your shopping trends: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+                
+                <label>Inspired by your browsing history: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+                
+                <label>More items to consider: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                </label>
+
+                <br><br>
+                
+                <label>Related to items you've viewed: </label>
+                <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked">
+                    <div class="control__indicator"></div>
                 </label>
             </form>
         </div>
 
         <div id="searchPref">
             <h3>Search Preferences</h3>
+            <h4>Categories:</h4>
+
+            <label>Alexa Skills</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Amazon Devices</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Amazon Warehouse Deals</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Appliances</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Apps & Games</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Arts, Crafts & Sewing</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Automotive Parts & Accessories</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Baby</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Beauty & Personal Care</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Books</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>CDs & Vinyl</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Cell Phones & Accessories</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Clothing, Shoes & Jewelry</label>
+        <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Collectibles & Fine Art</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Computers</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Courses</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Credit and Payment Cards</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Digital Music</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Electronics</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Garden & Outdoor</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Gift Cards</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Grocery & Gourmet Food</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Handmade</label>
+            <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked">
+                    <div class="control__indicator"></div>
+                </label>
+    
+                <br><br>
+
+            <label>Health, Household & Baby Care</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Home & Business Services</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Home & Kitchen</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Industrial & Scientific</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Kindle Store</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Luggage & Travel Gear</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Luxury Beauty</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Magazine Subscriptions</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Movies & TV</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Musical Instruments</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Office Products</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Pet Supplies</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Prime Exclusive Savings</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Prime Pantry</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Prime Video</label>
+            <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Software</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Sports & Outdoors</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Tools & Home Improvement</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Toys & Games</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Vehicles</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
+
+            <br><br>
+
+            <label>Video Games</label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+            </label>
         </div>
 
-    </div>
+    </div>    
 
     <footer>
         <img src="images/footerPlaceholder.png" width="1690px;">
