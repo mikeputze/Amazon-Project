@@ -1,7 +1,7 @@
 # Amazon-Project
 
 TO DO:
-  - Finish Preferences
   - Import remaining wireframes
+  - Finish Preferences
   - Home Page
   - Account Page
