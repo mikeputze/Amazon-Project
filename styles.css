@@ -30,6 +30,10 @@ footer {
     padding: 20px;
 }
 
+#homePref td:nth-child(1), #searchPref td:nth-child(1) {
+    width: 700px;
+}
+
 /* Classes */
 
 
@@ -172,53 +176,95 @@ footer {
     -webkit-transition: all 0.5s ease-in-out;
 }
 
-/* Flip Switch */
-.switch {
-    display: inline-block;
-    height: 17px;
+/* Checkbox */
+.control {
+	font-size: 18px;
     position: relative;
-    width: 30px;
-    top: 3px;
+    float: right;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
 }
 
-.switch input {
-    display: none;
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
 }
 
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+    background: #e6e6e6;
+    transition: 0.5s;
 }
 
-.slider:before {
-    background-color: #fff;
-    bottom: 2px;
-    content: "";
-    height: 13px;
-    left: 2px;
-    position: absolute;
-    transition: .4s;
-    width: 13px;
+.control--radio .control__indicator {
+	border-radius: 50%;
 }
 
-input:checked + .slider {
-    background-color: #ff9900;
+.control:hover input ~ .control__indicator {
+    background: #ccc;
+    transition: 0.5s;
+}
+.control input:checked ~ .control__indicator {
+    background: #ffa722;
+    transition: 0.5s;
 }
 
-input:checked + .slider:before {
-    transform: translateX(13px);
+.control:hover input:not([disabled]):checked ~ .control__indicator {
+    background: #f39303;
+    transition: 0.5s;
 }
 
-.slider.round {
-    border-radius: 17px;
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+    background: #e6e6e6;
+    transition: 0.5s;
 }
 
-.slider.round:before {
-    border-radius: 50%;
+.control__indicator:after {
+	position: absolute;
+	display: none;
+    content: '';
+    transition: 0.5s;
+}
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+    transition: 4s;
+}
+
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transition: 0.5s;
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+    transition: 0.5s;
+}
+
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
 }
